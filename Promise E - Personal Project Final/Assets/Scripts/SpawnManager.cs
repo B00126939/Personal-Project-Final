@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnEnemy", startDelay, enemySpawnTime);
-        InvokeRepeating("SpawnPowerUp", startDelay, powerupSpawnTime);
+        InvokeRepeating("SpawnPowerUp", startDelay, powerupSpawnTime);   
     }
 
     // Update is called once per frame
@@ -48,4 +49,6 @@ public class SpawnManager : MonoBehaviour
 
         Instantiate(powerup, spawnPos, powerup.gameObject.transform.rotation);
 	}
+
+    
 }

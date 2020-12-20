@@ -26,12 +26,18 @@ public class ZombieController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
  
-            if(collision.gameObject.CompareTag("Orb"))
-            {
-                Debug.Log("Enemy Collided with Orb");
-	        }
+            
 
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+      
+      if(other.gameObject.CompareTag("Orb"))
+      {
+        Debug.Log("Enemy Collided with Orb");
+	  }
+    }
 
     void ProjectileLaunch()
     {             

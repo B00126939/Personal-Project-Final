@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveDown : MonoBehaviour
 {
     public float speed = 35.0f;
-    private float zDestroy = -15.0f;
+    private float zDestroy = -20.0f;
     private Rigidbody objectRb;
 
     // Start is called before the first frame update
